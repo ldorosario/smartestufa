@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Smart Estufa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- links externos -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+   <!-- links internos -->
+  <link rel="stylesheet" href="front.css">
+  <script src="javax.js"></script>
+
+
+</head>
+<body onload="Chama_snack()">
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top entrada">
+  <a class="navbar-brand" href="#">Smart Estufa</a>
+  
+</nav>
+
+<br>  
+<br>  
+<br>
+
+
+<div class="container">
+
+
+  <div class="card bg-light text-dark">
+    <div class="container-fluid"><br>
+      <center><h3>Temperatura</h3>
+     
+      <h1><div id="temperatura"><!--Mudança temperatura via js -->0.00°C</div></h1></center>
+    </div>
+    
+<br>
+
+
+<div class="card bg-light text-dark">
+  <div class="container-fluid"><br>
+    <center><h3>Úmidade</h3>
+   
+    <h1><div id="temperatura"><!--Mudança umidade via js -->0%</div></h1></center>
+  </div>
+</div>
+
+
+
+
+<div id="snackbar"></div>
+
+<div id="registro_data"><!--Retorno data via js --><b>DATA SINCRONIZAÇÃO</b></div>
+
+</body>
+</html>
+
+
