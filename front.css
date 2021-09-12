@@ -1,0 +1,54 @@
+ 
+ #snackbar {
+    visibility: hidden; /* esconde snackbar */
+    min-width: 250px; /* largura minima */
+    margin-left: -125px; /* divde o valor de min-width por 2 */
+    background-color: #c0c0c0; /* define fundo cinza */
+    color: #000; /* Cor do texto preto */
+    text-align: center; /* texto centralizado */
+    border-radius: 8px; /* bordas arredondadas */
+    padding: 16px; /* define o preenchimento */
+    position: fixed; /* define a positção fixada na tela */
+    left: 50%; /* centraliza  snackbar */
+    bottom: 60px; /* 60px da parte inferior da tela */
+    z-index: 1;
+  }
+ /* faz toda tag que for da classe .fadein receba uma animação ao carregar */
+  .fadein
+  {
+    -webkit-animation: fadein 1.5s;
+    animation: fadein 1.5s;
+  }
+  
+  .direita
+  {
+    float:right;
+  }
+
+  /* mostra snackbar quando solicitado */
+  #snackbar.show {
+    visibility: visible; 
+    -webkit-animation: fadein 0.5s;
+    animation: fadein 0.5s;
+  }
+  
+  /* Animaçoes de entrada e saida da snackbar*/
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 60px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 60px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 60px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 60px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  } 
