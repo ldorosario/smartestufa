@@ -26,5 +26,5 @@
 
 
 
-// gera numero aleatórios de 12 a 100, simulando o sensor de úmidade
+// gera numero aleatórios de 12 a 100, simulando o sensor de Umidade
 echo (mt_rand(12,100)) . "% / <font size='5px'>70% max</font>";
